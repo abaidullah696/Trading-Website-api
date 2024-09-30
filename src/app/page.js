@@ -1,4 +1,4 @@
-import StockCard from '../components/StockCard';
+import StockCard from "@/Components/StockCard";
 
 export default function HomePage() {
   return (
