@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { getStockData, analyzeTrend } from '../services/stockServices';
+import { getStockData, analyzeTrend } from '../services/stockService';
 import StockChart from './StockChart';
 
 const StockCard = ({ symbol }) => {
@@ -27,9 +27,9 @@ const StockCard = ({ symbol }) => {
       </h2>
       {stockData && (
         <div>
-          <p>Current Price: ${stockData.c}</p>
-          <p>High Price: ${stockData.h}</p>
-          <p>Low Price: ${stockData.l}</p>
+          <p>Current Price: ${stockData.c.toFixed(2)}</p>
+          <p>High Price: ${stockData.h.toFixed(2)}</p>
+          <p>Low Price: ${stockData.l.toFixed(2)}</p>
         </div>
       )}
     </div>

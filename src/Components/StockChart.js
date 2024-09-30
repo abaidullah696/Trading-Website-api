@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { Line } from 'react-chartjs-2';
 
 const StockChart = ({ stockData }) => {
@@ -7,9 +7,9 @@ const StockChart = ({ stockData }) => {
     datasets: [
       {
         label: 'Stock Price',
-        data: stockData.map(day => day.close),
+        data: stockData.map(day => day.close.toFixed(2)), // Format to 2 decimal places
         borderColor: '#42A5F5',
-        fill: false
+        fill: false,
       }
     ]
   };
