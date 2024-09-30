@@ -25,3 +25,17 @@ body {
     text-wrap: balance;
   }
 }
+.bullish {
+  color: green;
+}
+
+.bearish {
+  color: red;
+}
+
+.stock-card {
+  border: 1px solid #ddd;
+  padding: 20px;
+  margin: 10px;
+  width: 300px;
+}
