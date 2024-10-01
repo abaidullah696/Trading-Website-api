@@ -1,7 +1,7 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import { getStockData, analyzeTrend } from '../services/stockService';
+import { getStockData, analyzeTrend } from '../services/stockServices';
 import StockChart from './StockChart';
 
 const StockCard = ({ symbol }) => {
